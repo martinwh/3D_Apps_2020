@@ -1,0 +1,56 @@
+{
+    "pageTextData": [
+		{
+		"title": "Laboratory 1",
+		"subTitle": "Home Page Template",		
+		"description": "This laboratory is focused on acquiring the skills needed to create a responsive mobile first web page that you will use as an initial 3D App home oage template, i.e. an HTML5 and CSS3 resource, for your basic 3D App that you will create in Lab 4 and 5. You will integrate your 3D models created in Lab 2 and 3 into this template, thus creating a basic 3D App. To do this, you will utilise Bootstrap 4's fluid grid method for this responsive mobile first web page. In previous years we used the Adobe Dreamweaver fluid grid system and its associated IDE. However, for 2018 you will be using a lightweight code editor, such as NotePad++, Brackets, Sublime Text, Atom or Visual Studio Code. In fact, all the lab tutorials are now converted to use Visual Studio Code (VSCode) and Bootstrap 4. However, you are free to use other tools and frontend framworks as you wish, subject to certain restrictions outlined in the tutorial, i.e. you have to design your own HTML5/CSS template."
+
+		},
+		{
+		"title": "Laboratory 2",
+		"subTitle": "3ds Max Models",		
+		"description": "This laboratory introduces Autodesk 3ds Max 2017 and the basic principles of 3D modelling and texturing required for this module. This lab work is focused on acquiring the skills needed to model, texture, illuminate and visualise 3D models suitable for rendering in a responsive mobile first web 3D application — a 3D App. This means that your 3D models can only exploit 3ds Max standard materials, lights, and cameras, i.e. you can not use any photorealistic methods. Your Sprite X3D model is assessed in the Part 1 Assignment for undergraduates. The Sprite bottle is meant to represent, roughly, the sort of geometrical complexity we expect for your final assignment models — the image above shows the Sprite bottle broken down into component parts with materials and textures applied. The images below, which you can expand into a lightbox, show the sort of results you can obtain. You should consider created 3D image renders of your models as additional media contents."
+		},
+		{
+		"title": "Laboratory 3",
+		"subTitle": "X3D Models",		
+		"description": "This laboratory focuses on understanding a specific workflow (there are others) that allows you to export your 3ds Max models into VRML97 (virtual reality modelling language) model, which enables you to test that your models will eventually render in a responsive mobile first Web 3D application. We then convert your VRML97 models into an X3D format suitable for rendering in an HTML5 Document Object Model. To do this we use a technology called X3DOM that allows us to \"Integrate 3D content seamlessly into your 3D App - the scene is directly written into the HTML markup with no plugins needed — simply include a javascript file\". This is quite a crucial step, your 3D VRML models must be converted to inline X3D to work in your 3D App. You do not need to undertsand the 'nuts and bolts' of VRML97 or X3D, but these languages are human readable, so with a little curiosity you can shorten the workflow process by modifying your X3D code. A typical example might be to set up your cameras and lights once, and use the same exported/converted code for all models." 
+		},
+        {
+		"title": "Laboratory 4",
+		"subTitle": "Basic Web 3D App",		
+		"description": "This laboratory is focused on converting your Lab 1 Coca Cola branded responsive mobile first template into a version that embeds (or writes) your Lab 3 models as inline X3D models directly into the HTML5 DOM. In Lab 3 you will have tested that your 3D models render as both X3D (i.e. renders in an X3D viewer) and X3DOM (i.e. X3D models in an HTML5 web page). In this Lab 4 you will adapt your HTML5 and CSS3 code to create the layout and styling for three more responsive mobile web 3D App pages, one each for your coke, sprite and pepper models. You will exploit some of the Bootstrap 4 components, such as the .card class, to achive a reasonable 3D App layput. You will then link your 4 pages together into a basic 3D App, while also creating the basic layout to interact with your 3D models, e.g. include an interactive panel to change cameras, animate the model, and so on. In Lab 6 we will connect up the camera and animation buttons, however you have seen code to do this in Lab 3!"
+        },
+		{
+		"title": "Laboratory 5",
+		"subTitle": " SPA 3D App",		
+		"description": "This laboratory is focused on refining your Lab 4 HTML5 and CSS3 based responsive mobile template (3D App) to introduce interactivity with some simple JavaScript functions that, for example: 1) converts your 3D App into a single page application (using some simple JavaScript content swap code), 2) dynamically restyles the 3D App (using the document.getElementById() function), and 3) builds in a JavaScript (exploiting AJAX with XMLHttpRequest) and PHP based image gallery that could be exploited to load new models, or trigger the content swap, or simply act as a 3D Image gallery, amongst other uses. This will be your first introduction to PHP with the image gallery, and AJAX (Asynchronous JavaScript and XML) using the XMLHttpRequest object to request data from the server. "
+		},
+		{
+		"title": "Laboratory 6",
+		"subTitle": "AJAX and JSON",		
+		"description": "This laboratory introduces you to more AJAX, which we use to dynamically update content on your 3D App. In Lab 5, you already used AJAX to build the gallery code, which used the XMLHttpRequest object to asynchronously request filenames from the web server using a PHP hook. JavaScript runs continously on the client-side, while the PHP has to be invoked. In Lab 6 we extend the use of AJAX to make asynchronous requests for content from the server, where for simplicity the data is stord in a JSON file. You will exploit JQuery's .getJSON() method to get data from the server. Note, your Lab 4 and 5 3D App versions instantiated three X3D renderers, which utilises more resource than is necessary — it can fail. You should take the opportunity in Lab 6 to redesign your code to instantiate 1 X3D renderer and switch in and out different scenes — see the Bootstrap 3017 version. You should also get into the habit of tidying up your code, e.g. X3D scene switching, perhaps use PHP to include the header and footer, etc."
+		},
+		{
+		"title": "Laboratory 7",
+		"subTitle": "Model, View, Controller",		
+		"description": "This laboratory introduces you to the concept of MVC (model, view, controller) design patterns — you may have already come across MVC design patterns in a previous module.  You will develop a MVC framework using PHP and a SQLite database. So, instead of storing your 3D App data in a JSON file, like you did in lab 6, you will store your data in an SQLite database. In particular, you will use PHP classes to develop a controller class and a model class, each with associated methods (functions). The model methods will access the data base, and the controller methods will receive AJAX requests from the view, route them to the model class methods to access and return data to the view via the controller. In effect, you will begin to build an API layer in the controller where your PHP API methods will call associated PHP database access methods in the model to retrieve data. It is important to note that with PHP on the server, you won't be able to see your PHP code at the back end, so it is critical that you get your Lab 7 and 8 codes running correctly, and that you understand how to exploit these concepts for your assignment in Week 12."
+		},
+        {
+		"title": "Laboratory 8",
+		"subTitle": "MVC Continued",		
+		"description": "This laboratory extends Lab 7 by looking at third party APIs, e.g. the Flickr API, and continues to extend your database access layer (DAL), i.e. your model class methods, and also adds new controller API methods. We look at different ways to connect up the data flow (in both Lab 7 and 8) between the model, controller and view, and we encourage you to think about this by taking the examples coded and re-coding them into a more orthodox MVC design pattern. This way, you will gain a better understanding. A key lesson to take from Lab 8 is the notion of returning data via a results array from the model class to the controller class, both model and controller methods being on the server side, then returning the data via a JSON packet from the controller to the view using the PHP json_encode() function and echo statement. Given this, you should be able to see how to chop uo your Lab 6 HTML/CSS (views) into new views for your MVC framework.  You would then create appropriate JavaScript using JQuery's AJAX methods, like you did in Lab 6, to make calls to your controller methods to populate your views with data from the model class."
+        },
+		{
+		"title": "Laboratory 9",
+		"subTitle": "Coca Cola 3D App",		
+		"description": "In this laboratory you should consider building upon Lab 6, 7 and 8 codes to create the framework for your final assignment — a virtual museum. One approach is simply to continue to build and refine Lab 6 HTML/CSS, which will constitute your views, but now in the context of your MVC framework.  Put all your data into the SQLite database and connect up.  Once your coca cola 3D App MVC version is up and running, you can then spend the final weeks refining the views to rebrand them so that it now represents your final assignment virtual museum, populating SQLite with new data, and creating replacement X3D models for your new virtual museum — good luck!"
+		},
+		{
+		"title": "Mobile Web 3D Applications",
+		"subTitle": "Live Feedback Site",		
+		"description": "The main goal of this 3D App site is to provide LIVE FEEDBACK on the laboratory results on a week by week basis. Here, you will find example results that you can study up to week 9. The idea is that, while completing the labs, if you get stuck, you can examine this site for the expected results, your results may be slightly different depending on your design elements, e.g. CSS3, you may have a better model, etc., and if needed you can use Chrome's Developer Tools to dig further to examine the code."
+
+		}
+	]
+}

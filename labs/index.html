@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mobile Web 3D Applications 2018</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-4-navbar.css" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" crossorigin="anonymous">
+    <!-- Lets have some fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>
+    <!-- Sticky top nnavbar -->
+    <nav class="navbar navbar-expand-md sticky-top navbar_coca_cola">
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <h1>Mobile 3D Apps 2020</h1>
+                <p>HTML5, CSS, X3D, AJAX, JQuery, PHP, SQLite</p>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Feedback
+                  </a>
+                  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <!-- List actions:
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                      <!-- Laboratory 1 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 1 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Bootstrap 4 Results</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="../../3D_Apps_2018/lab1/Bootstrap2018/">Bootstrap 4.0 - 2018</a></li>
+                                      <li><a class="dropdown-item" href="../../3D_Apps_2019/lab1/">Bootstrap 4.2 - 2019</a></li>
+                                      <li><a class="dropdown-item" href="../lab1/">Bootstrap 4.3 - 2020</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <!-- Laboratory 2 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 2 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item dropdown-toggle" href="#">3ds Max Models</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Coca Cola 3D</a></li>
+                                      <li><a class="dropdown-item" href="#">Sprite 3D</a></li>
+                                      <li><a class="dropdown-item" href="#">Dr Pepper 3D</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">VRML Models</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Coca Cola 3D</a></li>
+                                      <li><a class="dropdown-item" href="#">Sprite 3D</a></li>
+                                      <li><a class="dropdown-item" href="#">Dr Pepper 3D</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">X3D Models</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Coca Cola 3D</a></li>
+                                      <li><a class="dropdown-item" href="#">Sprite 3D</a></li>
+                                      <li><a class="dropdown-item" href="#">Dr Pepper 3D</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <!-- Laboratory 3 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 3 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../3D_Apps_2019/lab3/coke/export/coke_no_animation.html">Coke X3DOM</a></li>
+                              <li><a class="dropdown-item" href="#">Sprite X3DOM</a></li>
+                              <li><a class="dropdown-item" href="#">Dr Pepper X3DOM</a></li>
+                          </ul>
+                      </li>
+                      <!-- Laboratory 4 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 4 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../3D_Apps_2018/lab4/bootstrap2018"> 3D App BS4 — 2018</a></li>
+                              <li><a class="dropdown-item" href="../../3D_Apps_2019/lab4/">3D App BS4.3 - 2019</a></li>
+                              <li><a class="dropdown-item" href="../../3dapp/lab4/">3D App BS4.4 - 2020</a></li>
+                          </ul>
+                      </li>
+                      <!-- Laboratory 5 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 5 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../3D_Apps_2018/lab5/bootstrap2018">3D App — BS4 2018</a></li>
+                              <li><a class="dropdown-item" href="../../3D_Apps_2019/lab5/">3D App — BS4.3 2019</a></li>
+                              <li><a class="dropdown-item" href="../../3dapp/lab5/">3D App — BS4.4 2020</a></li>
+                          </ul>
+                      </li>
+                      <!-- Laboratory 6 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 6 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../3D_Apps_2018/lab6/bootstrap2018/">3D App — BS4 2018</a></li>
+                              <li><a class="dropdown-item" href="../../3D_Apps_2019/lab6/">3D App — BS4.3 2019</a></li>
+                              <li><a class="dropdown-item" href="../../3dapp/lab6/">3D App — BS4.4 2020</a></li>
+                          </ul>
+                      </li>
+                      <!-- Laboratory 7 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 7 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item dropdown-toggle" href="#">PHP Examples</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="../../3dapp/lab7/phpExamples/example1/index.php">Example 1</a></li>
+                                      <li><a class="dropdown-item" href="../../3dapp/lab7/phpExamples/example2/index.php">Example 2</a></li>
+                                      <li><a class="dropdown-item" href="../../3dapp/lab7/phpExamples/example3/index.php">Example 3</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">MVC Part A</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="../../3dapp/lab7/part_a/index.php/">Get Image Data</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">MVC Part B</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="../../3dapp/lab7/part_b/index.php/apigetdata">Get Model Data</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+
+                      <!-- Laboratory 8 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 8 Lab Results</a>
+                          <ul class="dropdown-menu">
+                              <!--
+                              <li><a class="dropdown-item" href="#">Submenu action 2</a></li>
+                              <li><a class="dropdown-item" href="#">Another submenu action 2</a></li>
+                              -->
+
+                              <li><a class="dropdown-item dropdown-toggle" href="#">MVC Part C</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="../../3dapp/lab8/part_c/index.php/apigetflickrservice">Get Flickr Images</a></li>
+                                      <li><a class="dropdown-item" href="../../3dapp/lab8/part_c/index.php/apigetjson">Get JSON Data</a></li>
+                                      <li><a class="dropdown-item" href="../../3dapp/lab8/part_c/index.php/">Get Image Data</a></li>
+                                      <li><a class="dropdown-item" href="../../3dapp/lab8/part_c/index.php/apigetdata">Get Model Data</a></li>
+                                      <li><a class="dropdown-item" href="../../3dapp/lab8/part_c/index.php/apiloadimage">Choose Image</a></li>
+                                  </ul>
+                              </li>
+                      </ul>
+                      <!-- Laboratory 9 results -->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Week 9 Lab Results</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../../3dapp/lab9/CocaCola_VM/index.php/apicocacola">Coca Cola VM</a>
+                                <a class="dropdown-item" href="../../3dapp/lab9/Vase_VM/index.php/">Vase VM</a>
+                                <a class="dropdown-item" href="../../3dapp/lab9/SierraLeone_VM">Sierra Leone VM</a>
+                            </li>
+
+
+                              
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card my-2">
+                    <div id="main_3d_image" >
+                    <div id="main_text" class="card-body">
+                        <div id="title_main"></div>
+                        <p id="subTitle_main"></p>
+                        <p id="description_main"></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- First row -->
+
+        <div class="card-columns">
+            <!-- Lab 1 -->
+            
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab1" class="card-header drinksText"></div>
+                    <div class="card-body">
+                        <a href="#">
+                          <img class="img-thumbnail" src="images/lab1.jpg" alt="Lab 1">
+                        </a>
+                        <div id="subTitle_lab1" class="card-title drinksText"></div>
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab1">Description</button>
+                        <div id="description_lab1" class="card-text collapse drinksText"></div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="../../3D_Apps_2018/lab1/Bootstrap2018/" class="btn btn-info btn-responsive">BS4.0 2018</a>
+                        <a href="../../3D_Apps_2019/lab1/" class="btn btn-info btn-responsive">BS4.2 2019</a>
+                        <a href="../../3dapp/lab1/" class="btn btn-success btn-responsive">BS4.3 2020</a>
+                    </div>
+                </div> 
+            
+            <!-- Lab 2 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab2" class="card-header drinksText"></div> 
+                    <div class="card-body">
+                        <a href="#" >
+                          <img class="img-thumbnail" src="images/lab2.jpg" alt="Lab 2">
+                        </a>
+                        <div id="subTitle_lab2" class="card-title drinksText"></div>
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab2">Description</button>        
+                        <div id="description_lab2" class="card-text collapse drinksText"></div> 
+                    </div>
+                    <div class="card-footer">
+                        <img class="img-thumbnail my-1" data-toggle="modal" data-target="#myModal" src="../../3D_Apps_2019/lab2/coke/renderoutput/coke.jpg" alt="Coke Lab 1" width="80" height="60">
+                        <img class="img-thumbnail my-1" data-toggle="modal" data-target="#myModal" src="../../3D_Apps_2019/lab2/sprite/renderoutput/sprite.jpg" alt="Sprite Lab 1" width="80" height="60">
+                        <img class="img-thumbnail my-1" data-toggle="modal" data-target="#myModal" src="../../3D_Apps_2019/lab2/pepper/renderoutput/pepper.jpg" alt="Pepper Lab 1" width="80" height="60">
+                    </div>
+                </div>
+
+            <!-- Lab 3 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab3" class="card-header drinksText"></div> 
+                    <div class="card-body">            
+                        <a href="#">
+                          <img class="img-thumbnail" src="images/lab3.jpg" alt="Lab 3">
+                        </a>
+                        <div id="subTitle_lab3" class="card-title drinksText"></div> 
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab3">Description</button>      
+                        <div id="description_lab3" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">    
+                        <a href="../lab3/coke/export/coke_no_animation.html">
+                            <img class="img-thumbnail my-1" src="../../3D_Apps_2019/lab3/coke/renderoutput/coke.jpg" alt="Coke Lab 1" width="80" height="60">
+                        </a>
+                        <a href="#">
+                            <img class="img-thumbnail my-1" id="1" data-toggle="modal" data-target="#myModal" src="../../3D_Apps_2019/lab3/sprite/renderoutput/sprite.jpg" alt="Sprite Lab 1" width="80" height="60">
+                        </a>
+                        <a href="#">
+                            <img class="img-thumbnail my-1" id="1" data-toggle="modal" data-target="#myModal" src="../../3D_Apps_2019/lab3/pepper/renderoutput/pepper.jpg" alt="Pepper Lab 1" width="80" height="60">                
+                        </a>
+                    </div>
+                </div>
+
+            <!-- Second row — use card columns (masonary) to stack -->
+            <!-- Lab 4 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab4" class="card-header drinksText"></div> 
+                    <div class="card-body">  
+                        <a href="#" >
+                            <img class="img-thumbnail" src="images/lab4.jpg" alt="Lab 4">
+                        </a>
+                        <div id="subTitle_lab4" class="card-title drinksText"></div>
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab4">Description</button>       
+                        <div id="description_lab4" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">  
+                        <a href="../../3D_Apps_2018/lab4/bootstrap2018" class="btn btn-info btn-responsive">BS4.0 2018</a>
+                        <a href="../../3D_Apps_2019/lab4/" class="btn btn-info btn-responsive">BS4.3 2019</a>
+                        <a href="../../3dapp/lab4/" class="btn btn-success btn-responsive">BS4.3 2020</a>
+                    </div>
+                </div>
+
+            <!-- Lab 5 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab5" class="card-header drinksText"></div> 
+                    <div class="card-body">  
+                        <a href="#" >
+                            <img class="img-thumbnail" src="images/lab5.jpg" alt="Lab 5">
+                        </a>
+                        <div id="subTitle_lab5" class="card-title drinksText"></div>
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab5">Description</button>        
+                        <div id="description_lab5" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">  
+                        <a href="../../3D_Apps_2018/lab5/bootstrap2018" class="btn btn-info btn-responsive">BS4 2018</a>
+                        <a href="../../3D_Apps_2019/lab5/" class="btn btn-info btn-responsive">BS4.3 2019</a>
+                        <a href="../../3dapp/lab5/" class="btn btn-success btn-responsive">BS4.4 2020</a>
+                    </div>
+                </div>
+
+            <!-- Lab 6 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab6" class="card-header drinksText"></div> 
+                    <div class="card-body">  
+                        <a href="#" >
+                            <img class="img-thumbnail" src="images/lab6.jpg" alt="Lab 6">
+                        </a>
+                        <div id="subTitle_lab6" class="card-title drinksText"></div> 
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab6">Description</button>       
+                        <div id="description_lab6" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">  
+                        <!--<a href="../../3D_Apps_2018/lab6/prototypeVirtualMuseum/completed_part_3/" class="btn btn-info btn-responsive">Proto - VM</a>
+                        -->
+                        <a href="../../3D_Apps_2018/lab6/bootstrap2018/index.html" class="btn btn-info btn-responsive">BS4 2018</a> 
+                        <a href="../../3D_Apps_2019/lab6/" class="btn btn-info btn-responsive">BS4.3 2019</a> 
+                        <a href="../../3dapp/lab6/" class="btn btn-success btn-responsive">BS4.4 2020</a>
+                    </div>
+                </div>
+
+            <!-- Third row — use card columns (masonary) to stack -->
+            <!-- Lab 7 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab7" class="card-header drinksText"></div> 
+                    <div class="card-body">  
+                        <a href="#" >
+                            <img class="img-thumbnail" src="images/lab7.jpg" alt="Lab 7">
+                        </a>
+                        <div id="subTitle_lab7" class="card-title drinksText"></div>
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab7">Description</button>        
+                        <div id="description_lab7" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">  
+                        <a href="../../3dapp/lab7/part_a/index.php/" class="btn btn-success btn-responsive">3D App Test 2</a>
+                        <a href="../../3dapp/lab7/part_b/index.php/apigetdata" class="btn btn-success btn-responsive">API Get Data</a> 
+                    </div>
+                </div>
+ 
+            <!-- Lab 8 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab8" class="card-header drinksText"></div> 
+                    <div class="card-body">  
+                        <a href="#" >
+                            <img class="img-thumbnail" src="images/lab8.jpg" alt="Lab 8">
+                        </a>
+                        <div id="subTitle_lab8" class="card-title drinksText"></div>  
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab8">Description</button>      
+                        <div id="description_lab8" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">  
+                        <a href="../../3dapp/lab8/part_c/index.php/" class="btn btn-success btn-responsive">Home</a>
+                        <a href="../../3dapp/lab8/part_c/index.php/apigetdata" class="btn btn-success btn-responsive">API Get Data</a>
+                        <a href="../../3dapp/lab8/part_c/index.php/apigetflickrservice" class="btn btn-success btn-responsive">Flickr API</a>
+                        <a href="../../3dapp/lab8/part_c/index.php/apiloadimage" class="btn btn-success btn-responsive">Load Image Data</a>  
+                    </div>
+                </div>
+
+            <!-- Lab 9 -->
+
+                <div class="card border-danger bg-transparent my-1">
+                    <div id="title_lab9" class="card-header drinksText"></div> 
+                    <div class="card-body">  
+                        <a href="#" >
+                            <img class="img-thumbnail" src="images/lab9.jpg" alt="Lab 9">
+                        </a>
+                        <div id="subTitle_lab9" class="card-title drinksText"></div>    
+                        <button type="button" class="btn btn-primary btn-responsive" data-toggle="collapse" data-target="#description_lab9">Example Virtual Museums</button>    
+                        <div id="description_lab9" class="card-text collapse drinksText"></div>  
+                    </div>
+                    <div class="card-footer">  
+                        <a href="../../3dapp/lab9/CocaCola_VM/index.php/apicocacola" class="btn btn-success btn-responsive">Coca Cola VM</a>  
+                        <a href="../../3dapp/lab9/SierraLeone_VM" class="btn btn-success btn-responsive">Sierra Leone VM</a>
+                        <a href="../../3dapp/lab9/Vase_VM/index.php/" class="btn btn-success btn-responsive">Vase VM</a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+      </div>  <!-- End card contents for the 9 labs --> 
+
+      <!-- 
+      * Footer
+      -->
+      <nav class="navbar navbar-expand-sm footer">
+          <div class="container-fluid">   
+              <div class="navbar-text float-left copyright">
+                  <p><span class="align-baseline"></span>&copy 2018 Mobile Web 3D Applications </span></p>
+              </div>
+              <div class="navbar-text float-right social">
+                  <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+              </div>
+          </div>
+      </nav> 
+        
+      <!-- Create a shared Modal for all the images to display the larger version of the above image assets -->
+      <div id="myModal" class="modal fade"  role="dialog">
+          <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <!-- modal header -->
+              <div class="modal-header">
+                <!-- I need to figure out how to pass the subTitle into the model to chnage the Modal header for each asset? -->
+                <div class="modal-title">Image Asset</div>
+              </div>
+              <!-- modal body -->
+              <div class="modal-body">
+                  <img class="img-responsive" style="width: 100%; height: auto;" src="">
+              </div>
+              <!-- modal footer -->
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div> 
+            </div>
+          </div>
+      </div>
+
+      <!-- Create a contact modal -->
+      <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form class="form-horizontal" role="form">
+                  <div class="modal-header">
+                    <h4>Contact:</h4>
+                  </div>
+                  <div class="modal-body">
+                    <!--<p>General queries: Please use the <b>Mobile Web 3D Knowledge Share</b></p>
+                    <p>Specific queries, knock on my door: <b>Chichester 1, 126 </b>, or talk to me in the lab</p>
+                    <p> <b>Send me an email</b>, but I get hundreds a day, so I can't guarantee the response time</p>
+                    <p> <b>Don't leave a message on my answer phone</b>; I don't check it!</p> -->
+                    <div class="form-group">
+                      <label for="contact-name" class="col-sm-2 control-label">Name</label>
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control" id="contact-name" placeholder="First & Last Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="contact-email" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                          <input type="email" class="form-control" id="contact-email" placeholder="example@sussex.ac.uk">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="contact-message" class="col-sm-2 control-label">Message</label>
+                      <div class="col-sm-10">
+                          <textarea class="form-control" id="contact-message" rows="6"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    <!-- You still need to process this with PHP at the backend 
+                        Suggested tutorial: http://tangledindesign.com/how-to-create-a-contact-form-using-html5-css3-and-php/﻿ 
+                      -->
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+            </form>     
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-3.2.1.js" crossorigin="anonymous"></script>
+      <script src="js/popper.js" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.js" crossorigin="anonymous"></script>
+      <script src="js/bootstrap-4-navbar.js" crossorigin="anonymous"></script>
+      <script src="js/fontawesome-all.js"></script>
+
+      <!-- Back end data for the page -->
+      <script src="js/getHomePageData.js"></script>
+      <!-- Modal lightbox for image viewing -->
+      <script src="js/lightBox.js"></script>  
+
+  </body>
+</html>

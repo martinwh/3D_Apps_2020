@@ -1,0 +1,426 @@
+/* CSS Rules for Lab 1 using Bootstrap.  Note, these rule are laid out non-mobile first.  
+	That is, the larger screen rules are shown first
+	For mobile first you need to swap the order and use min-width in the media queries
+	Check out: https://scotch.io/quick-tips/default-sizes-for-twitter-bootstraps-media-queries
+*/
+
+/* Method to declare your own fonts 
+@font-face {
+	font-family: cocaColaFont;
+	src: url(./lokicola.ttf);
+}
+*/
+
+/* Start CSS rules for xs */ 
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_coca_cola .navbar-brand {
+    color: rgb(245, 235, 235);
+ }
+    
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+    color: green;
+}
+
+.logo {
+    margin-top: 3px;
+}
+
+.logo h1 {
+    font-size: 31px;
+    }
+
+.logo p {
+    font-size: 11px;
+    padding-left: 7px;
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main_3d_image {
+    background-image: url(../images/main_3D_768.jpg);
+    background-repeat: no-repeat;
+    height: 240px;
+}
+
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+
+
+.drinksText > h2 {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.drinksText > h3 {
+    color: rgb(22, 52, 185);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.drinksText > p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.btn-responsive {
+    margin-right: 2px;
+    margin-bottom: 4px;
+    padding: 5px 5px;
+    font-size: 80%;
+    line-height: 1.2;
+    white-space: normal !important;
+}
+
+/* CSS rules to overwrite the position of the Bootstrap menu
+Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Buttons shows how to do this using Bootstrap 3, the principle should be the same: https://www.youtube.com/watch?v=7v2yC3GyDHU  
+
+There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
+*/
+
+.navbar_coca_cola {
+    background-color: rgb(165, 52, 52); 
+    min-height: 50px;
+}
+
+.navbar_coca_cola .navbar-nav > li > a {
+    color: white; 
+    padding-left: 5px; 
+}
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: green;  
+}
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active, 
+.navbar_coca_cola .navbar-nav > .active > a:hover, 
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #760003; /* Font color for active font */
+    background-color: #3399ff; /* Blue color for background */
+}
+
+/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+*/
+    
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: green;  
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+
+/* Let's style the dropdown menu
+*/
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: lightgrey;
+    margin-top: 20px; /* Experiment to move the dropdown menu down */
+}
+
+.dropdown-menu
+.dropdown-item {
+    color: #000000;
+}
+
+.dropdown-menu
+.dropdown-item:hover {
+    color: #030303;
+    background-color: grey;
+}
+
+/* CSS rule to style the footer */
+.footer {
+    color: #FFF;
+    background-color: #760003;
+    height: 50px;
+}
+
+.navbar-text > a {
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+.navbar-text > p {
+    color: rgb(64, 228, 15);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 13px;
+}
+
+.social {
+    padding-top: 0px;
+}
+
+/* Some simple CSS rules for styling p, h1 to h6, etc. in the main contents containers */
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	/*font-family: cocaColaFont;*/
+}
+
+/* CSS rule to adjust the thumnbail size relative to surrounding element */
+.thumbnail{
+	margin: 10px;
+}
+
+.thumbnail > img{
+	width: 100%;
+}
+
+/* CSS rule to astyle the footer */
+.footer {
+	color: #FFF;
+	margin-top: 30px;
+	background-color: #760003;
+}
+
+/* Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) {
+
+    body {
+        background-color: rgb(202, 181, 181);
+    }
+
+    #main_3d_image {
+        background-image: url(../images/main_3D_768.jpg);
+        background-repeat: no-repeat;
+        height: 288px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    .navbar_coca_cola {
+        background-color: rgb(165, 52, 52); 
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #257600;
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) { 
+    
+    body {
+        background-color: rgb(218, 216, 148);
+    }
+
+    #main_3d_image {
+        background-image: url(../images/main_3D_970.jpg);
+        background-repeat: no-repeat;
+        height: 363px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .navbar_coca_cola {
+        background-color: rgb(165, 52, 52); 
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #b890b1;
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) { 
+    
+    body {
+        background-color: rgb(185, 185, 178);
+    }
+
+    #main_3d_image {
+        background-image: url(../images/main_3D_1400.jpg);
+        background-repeat: repeat;
+        height: 524px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 20%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .navbar_coca_cola {
+        background-color: rgb(165, 52, 52); 
+        min-height: 120px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: grey;
+        height: 75px;
+    }
+
+    .navbar-text > a {
+        font-size: 15px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 23px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) { 
+    
+    #main_3d_image {
+        background-image: url(../images/main_3D_1400.jpg);
+        background-repeat: repeat;
+        height: 524px;
+    }
+}
+
