@@ -1,0 +1,49 @@
+/* 
+   No media query since this is the default
+*/
+h1 {
+    color:red; 
+    margin: 5px;
+}
+h2 {
+    color:blue; 
+    margin: 5px;
+}
+p {
+    color:green; 
+    margin: 5px; 
+}
+.imgBox {
+    padding: 2px; 
+    margin: 2px; 
+    border: 1px solid grey; 
+    border-radius: 0.25rem; 
+    float: left; 
+    width: 20%;
+}
+img {
+    padding: 2px; 
+    margin: 2px; border: 1px solid lightgrey; 
+    border-radius: 0.25rem; 
+    float: left; 
+    width: 95%;}
+.box {
+    border: 2px solid green; 
+    padding: 5px; 
+    float: left; 
+    margin-top: 20px; 
+    margin-left: 5px; 
+    margin-right: 5x; 
+    margin-bottom: 5px; 
+    padding: 20px; 
+    width: 90%; 
+    height: auto;
+}
+.textInput{
+    margin: 5px; 
+    float: left;
+}
+.btn{
+    margin: 5px; 
+    float: left;
+}
