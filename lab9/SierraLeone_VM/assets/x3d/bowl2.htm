@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+	<head>
+		<meta http-equiv='X-UA-Compatible' content='chrome=1'></meta>
+		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
+		<script src="http://www.x3dom.org/download/dev/x3dom.js"></script>
+		<link rel="stylesheet" href="http://www.x3dom.org/download/dev/x3dom.css">
+		<link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'></link>
+	</head>
+	<body style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+		<script>
+    		function rotateBowl()
+    		{
+        		if(document.getElementById('bowl__GrpBowl-TIMER').getAttribute('enabled')!= 'true')
+           			document.getElementById('bowl__GrpBowl-TIMER').setAttribute('enabled', 'true');
+        		else
+           			document.getElementById('bowl__GrpBowl-TIMER').setAttribute('enabled', 'false');
+    		}
+		</script>
+		<x3d style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+			<scene>
+				<inline nameSpaceName="bowl" mapDEFToID="true" onclick='rotateBowl();' url="Bowl2.x3d"> </inline>
+			</scene>
+		</x3d>
+	</body>
+</html> 

@@ -1,0 +1,204 @@
+
+#header {
+	margin-bottom:40px;
+}
+
+#header img {
+	display:block;
+	margin:auto;
+	padding:10px;
+}
+
+#header ul {
+	margin: 0px;
+	list-style-type: none;
+	float:right;
+}
+
+#header ul li {
+	float: left;
+}
+
+#header a {
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100px;
+	color: #bf0a65;
+}
+
+#content {
+	width:1000px;
+	margin:auto;
+}
+
+video {
+	width:100%;
+}
+
+#gallery {
+	text-align:center;
+	margin-top:10px;
+}
+
+#gallery a:link {
+	color: #000;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#interaction {
+	float:left;
+}
+
+#interaction button {
+	display:block;
+	width:100%;
+	background-color:#FF3399;
+	color:white;
+	font-weight:bold;
+	padding:15px;
+	margin-bottom:20px;
+	border:none;
+}
+
+#models {
+	float:left;
+	margin-left:50px;
+	margin-bottom:30px;
+	width:450px;
+}
+
+x3d {
+  height: 450px;
+  width: 450px;
+  border: none;
+  float: left;
+}
+
+#thumbnails {
+	text-align:center;
+}
+
+#thumbnails img {
+	padding-top:10px;
+	width:19%;
+	height:auto;
+}
+
+#information {
+	float:right;
+	width:350px;
+	margin-bottom:30px;
+}
+
+#information_header {
+	background-color:#FF3399;
+	color:white;
+	font-weight:bold;
+	padding:5px;
+	margin:0;
+}
+
+#information_body {
+	margin:0;
+	padding:10px 10px 10px 10px;	
+	background-color:#efefef;
+}
+
+.information_sub_heading {
+	font-weight:bold;
+}
+
+#admin a {
+	display:block;
+	width:100px;
+	background-color:#FF3399;
+	color:white;
+	font-weight:bold;
+	padding:15px;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+#footer {
+	clear:both;
+}
+
+#footer p {
+	padding-top:50px;
+	padding-bottom:50px;
+	text-align: center;
+	color: #FFF;
+	background-color: #48E3BC;
+}
+
+@media (min-width: 501px) and (max-width: 1042px) {
+	#content {
+    	width:96%;
+    	padding-left:2%;
+    	padding-right:2%;
+	}
+
+	#interaction {
+		float:none;
+		text-align: center;
+	}
+
+	#interaction button {
+		display:inline;
+		width:19.4%;
+	}
+
+	#models {
+		margin-left:0px;
+		margin-bottom:30px;
+		width:58%;
+	}
+
+	x3d {
+  		width: 100%;
+  		float: none;
+	}
+
+	#information {
+		width:40%;
+		margin-bottom:30px;
+	}
+}
+
+@media (max-width: 500px) {
+	#content {
+   		width:96%;
+    	padding-left:2%;
+    	padding-right:2%;
+	}
+
+	#interaction {
+		float:none;
+	}
+
+	#interaction button {
+		margin-bottom:5px;
+	}
+
+	#models {
+		float:none;
+		margin-left:0px;
+		margin-bottom:5px;
+		width:100%;
+	}
+
+	x3d {
+  		height: 100%;
+  		width: 100%;
+  		float: none;
+	}
+
+	#information {
+		float:none;
+		width:100%;
+		margin-bottom:5px;
+	}
+}

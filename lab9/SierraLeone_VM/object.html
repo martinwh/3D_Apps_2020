@@ -1,0 +1,199 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mobile Web App for Technology Enhanced Learning</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="javascript/respond.min.js"></script>
+
+<!--Use Google API Content Delivery Network (CDN) to provide libraries as needed-->
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- X3DOM resources
+<link rel="stylesheet" href="http://www.x3dom.org/download/dev/x3dom.css">-->
+<script src="javascript/x3dom.js"></script>
+<link rel='stylesheet' type='text/css' href='css/x3dom.css'></link>
+
+<!--Use Sierra Leone fancy box js and CSS, and main.css resources-->
+<!--<link rel="stylesheet" href="http://www.sierraleoneheritage.org/assets/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" />-->
+<link rel="stylesheet" href="http://www.sierraleoneheritage.org/assets/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" />
+<script src="http://www.sierraleoneheritage.org/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script> 
+	
+
+<!-- Use jQuery to access cultural object data from a JSON file (the Model); in a real situation this JSON data file may have been created through a search request on the object database.
+Objects found in a typical search or browse operation would be packaged into a JSON data file for transmission from the web server to the requesting client browser or mobile device, where 
+the following JQuery code would (part of the Control logic) would unpack it for assigning contents to the HTML template (the view). -->
+<script src="javascript/getJsonCulturalObjects.js"></script>
+
+<!--Javascript function to rotate (animate) the cultural object's 3D media object-->
+<script src="javascript/animateCulturalObject.js"></script>
+
+<!--Use Sierra Leone CSS and Javascript libraries here. Note: there is a second $(document).ready(function() in main.js,
+ 	which clashes with this one above, so ensure the version above is executed before the one in main.js-->
+<link rel="stylesheet" href="http://www.sierraleoneheritage.org/assets/css/main.css" type="text/css" />
+<script src="javascript/main.js"></script>
+
+<!--Use the JQuery $(.class).nailthub(); function and the associated css to create thumbnails-->
+<link href="css/jquery.nailthumb.1.1.css" type="text/css" rel="stylesheet" />
+<script src="javascript/jquery.nailthumb.1.1.js"></script>
+<script src="javascript/createThumbnails.js"></script>
+
+<!--formatting.css contains a css rule used to override the x3dom.css in order to centre 3D cultural object and remove the black border.
+formatting.css also applies a grey border to img thumbnails in objectPageSelector for asthetic reasons, and uses css to control the size of the objectPageSelector thumbnails.
+Three different .square-thumb sizes could be added to each of the device screen sizes in mobile_web.css to allow better response — if time permits, we'll do this.
+-->
+<link href="css/formatting.css" rel="stylesheet" type="text/css">
+<link href="css/mobile_web.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div class="gridContainer clearfix"> 
+
+	<!--Place top banner or header HTML code here-->
+    <div id="header_fluid"> <!--This is a renamed fluid grid container-->
+        	<div class="headerImage">
+			<img src="images/logo3.png" alt="" />
+        	</div>
+	</div>
+
+	<!--Place object page selection HTML code here-->
+    <div id="objectPageSelector"> <!--This is a fluid grid container-->
+         <div class="box">
+           	<h3 class="boxedTitle">Browse Objects</h3>     
+  			<!-- Use buttons to select the desired cultural object-->
+            <!--<p class="center"><button type="button" id="object1">Object 1</button> 
+            				| <button type="button" id="object2">Object 2</button> 
+            				| <button type="button" id="object3">Object 3</button>
+                            | <button type="button" id="object4">Object 4</button></p>-->
+			
+            <!-- Alternatively use the JQuery $().nailthumb() function to create cultural object thumbnails to select the desired cultural object-->
+            <p class="center" >  
+					<a href="#" ><img id="object1" src="" alt="object1" class="nailthumb-container square-thumb" /></a> &nbsp;&nbsp;            
+					<a href="#" ><img id="object2" src="" alt="object2" class="nailthumb-container square-thumb" /></a> &nbsp;&nbsp; 
+					<a href="#" ><img id="object3" src="" alt="object3" class="nailthumb-container square-thumb" /></a> &nbsp;&nbsp; 
+					<a href="#" ><img id="object4" src="" alt="object4" class="nailthumb-container square-thumb" /></a>                 	            
+			</p>                        
+		</div>
+	</div>  
+	
+    <!--Place media object presentation HTML code here-->
+    <div id="mediaObjects"> <!--This is a fluid grid container-->
+    	<div class="box">
+      		<h3 class="boxedTitle">Media Objects</h3>  
+                <!-- Depending on media object selected, display that media object-->
+                <div style="display:block;">
+					<center>
+                    	<!--A media object is display by utilising the JQuery $(.class).show(); $(.class).hide() and $(.class).fadout(); functions-->
+						<div class ="objImage"> <!--Show or hide based on JQuery .click() used to process the media selection-->
+                        	<div id="imageUrl" style="border:none" >Media object will insert here</div>
+                        </div>
+                        
+						<div class ="objVideo"> <!--Show or hide based on JQuery .click() used to process the media selection-->                           
+  								<div id="videoUrl">Media object will insert here</div>								                        
+                        </div>
+                        <div class ="obj3D" align="center" > <!--Show or hide based on JQuery .click() used to process the objectMediaSelector-->								
+							<x3d >
+								<scene id="x3domObject">
+                                	<!--<inline id="x3domUrl">Media object url will replace the existing url</inline>-->
+									<inline id="x3domUrl" nameSpaceName="bowl" mapDEFToID="true" onclick="rotateObject();" url="assets/x3d/Bowl2.x3d"> </inline>
+								</scene>
+							</x3d>	
+                        </div>
+                        <div class ="objSound"> <!--Show or hide based on JQuery .click() used to process the objectMediaSelector-->
+                        	<div id="soundUrl">Media object will insert here</div>
+                        </div>
+                        <div class ="objArx3d"> <!--Show or hide based on JQuery .click() used to process the objectMediaSelector-->
+                        	<div id="arImgUrl">Media object will insert here</div>
+                        </div>
+					</center>
+    			</div>
+ 		</div>
+    	<!--Place object media selection HTML code here-->   
+    	<div id="objectMediaSelector"> <!--This is a fluid grid container-->
+    		<div class="box">
+            	<h3 class="boxedTitle">Select Media Object</h3> 
+    			<!--Use simple links to selct the media object-->
+                <!--<p align="center">	
+                	<a href="#" id="objImage">IMAGE</a> | 
+                	<a href="#" id="objVideo">VIDEO</a> | 
+                    <a href="#" id="obj3D">X3DOM</a>  | 
+                    <a href="#" id="objSound">AUDIO</a> | 
+                    <a href="#" id="objArx3d">ARX3D</a>
+               	</p>-->
+                <!--Alternatively, use some asthetically cool looking icons borrowed from the Interweb!-->
+                <p class="center" >               
+					<a href="#" id="objImage"><img src="assets/icons/image.jpg" alt="IMAGE" class="nailthumb-container media-icon" /></a> &nbsp;&nbsp;                
+					<a href="#" id="objVideo"><img src="assets/icons/video.png" alt="VIDEO" class="nailthumb-container media-icon" /></a> &nbsp;&nbsp; 
+					<a href="#" id="obj3D"><img src="assets/icons/x3d.png" alt="X3DOM" class="nailthumb-container media-icon" /></a> &nbsp;&nbsp; 
+					<a href="#" id="objSound"><img src="assets/icons/audio.png" alt="AUDIO" class="nailthumb-container media-icon" /></a> &nbsp;&nbsp;
+                    <a href="#" id="objArx3d"><img src="assets/icons/ar.jpg" alt="ARX3D" class="nailthumb-container media-icon" /></a> &nbsp;&nbsp;               
+				</p> 
+   			</div>
+  		</div>
+  	</div>
+    <!--Place object description and name HTML code here--> 
+    <div id="objectDescription"> <!--This is a fluid grid container-->
+  		<div class="box">
+        	<h3 class="boxedTitle">Description</h3> 
+            <div id="name" style="display:inline"></div>
+    		<div id="description" style="display:inline">Insert description here</div>
+  		</div>
+  	</div>
+  	
+    <!--Place object further information HTML code here--> 
+    <div id="objectData"> <!--This is a fluid grid container-->
+    	<div class="box">
+        	<h3 class="boxedTitle">Further Information</h3>                   
+            <ul class="furtherinfo_body" style="display:none">
+                <li><span>Object: </span><div id="object" style="display:inline"></div></li>
+                <li><span>Materials: </span><div id="materials" style="display:inline"></div></li>
+                <li><span>Culture Group: </span><div id="cultureGroup" style="display:inline"></div></li>
+                <li><span>Dimensions: </span><div id="dimensions" style="display:inline"></div></li>
+                <li><span>Production Date: </span><div id="productionDate" style="display:inline"></div></li>
+                <li><span>Associated Places: </span><div id="associatedPlaces" style="display:inline"></div></li>
+                <li><span>Associated People: </span><div id="associatedPeople" style="display:inline"></div></li>
+                <li><span>Museum: </span><div id="museum" style="display:inline"></div></li>
+                <li><span>Accession Number: </span></b><div id="accessionNumber" style="display:inline"></div></li>
+            </ul>
+        	<p class="center"><a href="#" class="furtherinfo_view">View &#8595;</a><a href="#" class="furtherinfo_hide" style="display:none">Hide &#8593;</a></p>
+     	</div>  
+  	</div>
+	<!--Place bottom banner or footer HTML code here-->
+  	<div id="footer_fluid"><!--This is the renamed footer fluid grid container-->
+    	<div id="footer"><!--This is the new footer contents container that is now styled with the Sierra Leone main.css rules-->
+  			<div class="box" style="border:none">
+          		<p ><a href="#">About SierraLeoneHeritage.org</a>
+							| <a href="#">Contact us</a>
+							| <a href="#header"><b>&#8593;</b></a></p>
+			</div>
+   		</div>
+  	</div>
+
+</div>
+
+</body>
+</html>

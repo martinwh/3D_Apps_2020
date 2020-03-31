@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+X3D, x3d {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+#objectPageSelector img {
+  border: 1px solid rgba(211,211,211,1);
+}
+.header-logo {
+  max-width: 75%;
+  max-height: 75%;
+}	
+
+
+

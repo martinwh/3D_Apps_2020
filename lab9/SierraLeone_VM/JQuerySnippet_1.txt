@@ -1,0 +1,20 @@
+$(document).ready(function() {
+	var objID = 0;	
+	update(objID);
+	$( "#object1" ).click(function() {
+      update(objID=0);
+	});
+   		…
+});
+function update(objID)  {
+    //Read the JSON file as an AJAX request 
+	$.getJSON('./model/codata1.json', function(jsonObj) {
+		
+	...
+		
+	$('#object1').attr('src', jsonObj.culturalObjects[0].imageSmallUrl);
+	
+	...
+	
+	})
+}	
